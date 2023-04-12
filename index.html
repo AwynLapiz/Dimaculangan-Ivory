@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+	<title>
+		Create a Portfolio Gallery
+		using HTML and CSS
+	</title>
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+		
+	<style>
+	
+		/* wildcard styling */
+		* {
+			box-sizing: border-box;
+		}
+		
+		/* padding for whole body */
+		body {
+			padding: 15px;
+		}
+		
+		/* styling body */
+		.container {
+			max-width: 1200px;
+			margin: auto;
+		}
+		
+		h1 {
+			color: rgb(221, 78, 59);
+		}
+		
+		/* anchor tag decoration */
+		a {
+			text-decoration: none;
+			color: #df4b37;
+		}
+		
+		a:hover {
+			color: lightblue;
+		}
+		
+		/* paragraph tag decoration */
+		p {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 15;
+			overflow: hidden;
+	
+		}
+		
+		/* row and column decoration */
+		.row {
+			margin: 0px -18px;
+			padding: 8px;
+		}
+		
+		.row > .column {
+			padding: 6px;
+		}
+		
+		.column {
+			float: left;
+			width: 50%;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		/* content decoration */
+		.content {
+			background-color: rgb(255, 208, 170);
+			padding: 10px;
+			border: 1px solid rgb(119, 119, 119);
+		}
+		
+		/* window size 850 width set */
+		@media screen and (max-width: 850px) {
+			.column {
+				width: 50%;
+			}
+		}
+	
+		/* window size 400 width set */
+		@media screen and (max-width: 400px) {
+			.column {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	
+	<!-- title and tag -->
+	<div class="container">
+		<h1>Portfolio Gallery</h1>
+		<h3>Senior High School Strand</h3>
+		<hr>
+
+		<!-- Content of the body-->
+		<h2>Portfolio</h2>
+		<div class="row">
+			<div class="column">
+				<div class="content">
+					<img src=
+"1.jpg"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Accountancy, Business and Management Track</a>
+					</h3>
+					
+
+
+
+<p>
+	ABM (Accountancy, Business, and Management): This strand is designed for students who are interested in pursuing careers in business, finance, and management. It includes subjects such as accounting, economics, entrepreneurship, marketing, and business law. It aims to develop students' skills in critical thinking, problem solving, communication, and decision-making as well as prepare them for further studies in business-related fields.
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"4.jpg"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Humanities and Social Sciences Track</a>
+					</h3>
+					
+					
+
+
+
+<p>
+	HUMSS (Humanities and Social Sciences): This strand is focused on developing students' understanding of human behavior, society, and culture. It includes subjects such as history, economics, political science, sociology, psychology, and literature. It aims to prepare students for careers in fields such as law, journalism, social work, teaching, and politics.
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"3.jpg"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Information and Communication Technology Track</a>
+					</h3>
+					
+					
+
+
+
+<p>
+	ICT (Information and Communications Technology): This strand focuses on developing students' skills and knowledge in the field of technology, particularly in the areas of computer hardware and software, programming, networking, and multimedia. It aims to prepare students for careers in the tech industry and related fields.
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"2.jpg"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Agri-Fishery Arts Track</a>
+					</h3>
+					
+					
+
+
+
+<p>
+	AFA (Arts and Design): This strand is designed for students who are interested in pursuing careers in the arts, such as visual arts, music, dance, and theater. It aims to develop their creativity, artistic skills, and knowledge of different art forms, as well as prepare them for further studies in the arts.
+					</p>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>		
